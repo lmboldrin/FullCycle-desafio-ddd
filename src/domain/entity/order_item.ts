@@ -48,4 +48,8 @@ export default class OrderItem {
     orderItemTotal(): number {
         return this._price * this._quantity;
     }
+
+    changeQuantity(quantity: number): void {
+        this._quantity = quantity;
+    }
 }
